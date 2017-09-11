@@ -4,9 +4,9 @@ import { Switch } from 'react-router';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { firebaseApp } from './firebase';
 
-import App from './App.jsx';
-import SignIn from './SignIn.jsx';
-import SignUp from './SignUp.jsx';
+import App from './components/App.jsx';
+import SignIn from './components/SignIn.jsx';
+import SignUp from './components/SignUp.jsx';
 
 firebaseApp.auth().onAuthStateChanged(user => {
     if (user) {
