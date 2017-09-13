@@ -8,7 +8,8 @@ class GoalItem extends Component {
         // remove this goal from the goals reference;
         const { email } = this.props.user;
         const { title } = this.props.goal;
-        console.log('email', email, 'title', title);
+        // console.log('email', email, 'title', title);
+        completeGoalRef.push({email, title});
     }
 
     render() {
