@@ -4,6 +4,7 @@ import { firebaseApp } from '../firebase.js'
 
 import AddGoal from './AddGoal';
 import GoalList from './GoalList';
+import CompleteGoalList from './CompleteGoalList';
 
 class App extends Component {
     signOut = () => {
@@ -19,6 +20,8 @@ class App extends Component {
                     <h4>Goals</h4>
                     <div><GoalList /></div>
                     <hr />
+                    <h4>Complete Goals</h4>
+                    <CompleteGoalList />
                 </div>
                 <button
                     className="btn btn-danger"
