@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { firebaseApp } from '../firebase.js'
 
-export default class App extends Component {
+class App extends Component {
     signOut = () => {
         firebaseApp.auth().signOut();
     }
@@ -18,3 +19,10 @@ export default class App extends Component {
         )
     }
 }
+
+function mapStateToProps(state) {
+    console.log('state', state);
+    return {}
+}
+
+export default connect(mapStateToProps, null)(App);
