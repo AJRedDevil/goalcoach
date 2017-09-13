@@ -22,6 +22,7 @@ class App extends Component {
                     <hr />
                     <h4>Complete Goals</h4>
                     <CompleteGoalList />
+                    <hr />
                 </div>
                 <button
                     className="btn btn-danger"
